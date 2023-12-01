@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-export default function About(props) {
-  const [myStyle, setmyStyle] = useState({
-    color: "black",
-    backgroundColor: "white",
-    border: "1px solid dark",
-  });
+// export default function About(props) {
+//   const [myStyle, setmyStyle] = useState({
+//     color: "black",
+//     backgroundColor: "white",
+//     border: "1px solid dark",
+//   });
 
   // const [btntext, setbtntext] = useState("Enable Light Mode");
 
@@ -27,13 +27,13 @@ export default function About(props) {
   //   }
   // };
 
-  return (
-    <>
-      <input
-        type="checkbox"
-        onClick={props.toggleMode}
-        class="checkbox "
-      ></input>
+//   return (
+//     <>
+//       <input
+//         type="checkbox"
+//         onClick={props.toggleMode}
+//         class="checkbox "
+//       ></input>
       {/* <div className="container" style={myStyle}>
         <h2 className="mx-2">About Us</h2>
         <div className="accordion" id="accordionExample">
