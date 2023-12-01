@@ -1,12 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
-import About from "./components/About";
+// import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
-import Try from './components/Zombie'
+// import Try from './components/Zombie'
 import "./components/darkModeButton.css"; //do this free vayesi
-
-
 
 function App() {
   const [mode, setMode] = useState("light");

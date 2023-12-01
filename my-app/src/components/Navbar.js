@@ -1,13 +1,22 @@
 import React from "react";
 
 export default function Navbar(props) {
+  const handleSearch = (e) => {
+    // e.preventDefault();
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+  };
   return (
     <>
       <nav
         className={`navbar navbar-expand-lg bg-${props.mode} navbar-${props.mode}`}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a
+            className="navbar-brand"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Textutils
           </a>
           <button
@@ -27,7 +36,7 @@ export default function Navbar(props) {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="https://www.google.com"
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -35,23 +44,30 @@ export default function Navbar(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  About
+                <a
+                  className="nav-link"
+                  href="https://github.com/uniquesht1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  About Me
                 </a>
               </li>
             </ul>
-            <form className="d-flex" role="search">
+            <form className="d-flex" role="search" onSubmit={handleSearch}>
               <input
                 className="form-control mx-1"
                 type="search"
-                placeholder="Search"
+                placeholder="Search for Surprise"
                 aria-label="Search"
               />
               <button className="btn btn-outline-info " type="submit">
                 Search
               </button>
               <div
-                className={`form-check form-switch mx-3 my-2 text-${props.mode === "light" ? "danger" : "white"}`}
+                className={`form-check form-switch mx-3 my-2 text-${
+                  props.mode === "light" ? "danger" : "white"
+                }`}
               >
                 <input
                   className="form-check-input"
@@ -60,12 +76,6 @@ export default function Navbar(props) {
                   class="checkbox "
                   id="flexSwitchCheckDefault"
                 />
-                {/* <label
-                  className="form-check-label "
-                  htmlFor="flexSwitchCheckDefault"
-                >
-                  DarkMode
-                </label> */}
               </div>
             </form>
           </div>
