@@ -26,10 +26,10 @@ function App() {
         {/* heading prop pass gareko */}
         <div className="container">
           <Routes>
-            <Route path="TextCraftHub/about" element={<About mode={mode} />}></Route>
+            <Route path="/TextCraftHub/about" element={<About mode={mode} />}></Route>
 
             <Route
-              path="TextCraftHub/"
+              path="/TextCraftHub"
               element={
                 <TextForm heading="Enter the text to analyze" mode={mode} />
               }
