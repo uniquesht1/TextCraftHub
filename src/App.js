@@ -4,7 +4,7 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import "./components/darkModeButton.css"; //do this free vayesi
-
+import {HashRouter} from 'react-router-dom'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <HashRouter>
         <Navbar title="A-One" mode={mode} toggleMode={toggleMode} />
         {/* heading prop pass gareko */}
         <div className="container">
@@ -38,7 +38,7 @@ function App() {
             </Route>
           </Routes>
         </div>
-      </Router>
+      </HashRouter>
     </>
   );
 }
