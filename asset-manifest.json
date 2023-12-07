@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TextCraftHub/static/css/main.b31583af.css",
-    "main.js": "/TextCraftHub/static/js/main.6110fcd6.js",
+    "main.js": "/TextCraftHub/static/js/main.68a7ba4e.js",
     "static/js/787.ae053a3c.chunk.js": "/TextCraftHub/static/js/787.ae053a3c.chunk.js",
     "index.html": "/TextCraftHub/index.html",
     "main.b31583af.css.map": "/TextCraftHub/static/css/main.b31583af.css.map",
-    "main.6110fcd6.js.map": "/TextCraftHub/static/js/main.6110fcd6.js.map",
+    "main.68a7ba4e.js.map": "/TextCraftHub/static/js/main.68a7ba4e.js.map",
     "787.ae053a3c.chunk.js.map": "/TextCraftHub/static/js/787.ae053a3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b31583af.css",
-    "static/js/main.6110fcd6.js"
+    "static/js/main.68a7ba4e.js"
   ]
 }
