@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import "./components/darkModeButton.css"; //do this free vayesi
 import {HashRouter} from 'react-router-dom'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");
