@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function TextForm(props) {
+export default TextForm = (props) => {
   const handleUpClick = () => {
     console.log("button clicked");
     let newText = text.toUpperCase();
@@ -55,14 +55,20 @@ export default function TextForm(props) {
             placeholder="Enter text here"
           ></textarea>
         </div>
-        <div className="conatiner">
+        <div className="container">
           <button className="btn btn-primary mx-2 my-1" onClick={handleUpClick}>
             convert to Uppercase
           </button>
-          <button className="btn btn-primary mx-2 my-1" onClick={handleLowClick}>
+          <button
+            className="btn btn-primary mx-2 my-1"
+            onClick={handleLowClick}
+          >
             convert to Lowercase
           </button>
-          <button className="btn btn-primary mx-2 my-1" onClick={handleClearClick}>
+          <button
+            className="btn btn-primary mx-2 my-1"
+            onClick={handleClearClick}
+          >
             Clear Text
           </button>
           <button className="btn btn-primary mx-2 my-1" onClick={handleCopy}>
@@ -89,4 +95,4 @@ export default function TextForm(props) {
       </div>
     </>
   );
-}
+};
