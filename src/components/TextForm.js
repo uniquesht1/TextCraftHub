@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default TextForm = (props) => {
+const TextForm = (props) => {
   const handleUpClick = () => {
     console.log("button clicked");
     let newText = text.toUpperCase();
@@ -30,6 +30,12 @@ export default TextForm = (props) => {
     console.log("remove extra spaces");
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
+  };
+
+  const handleSpecialChar = () => {
+    console.log("remove special characters");
+    let newText = text.replace(/[^\w\s]/gi, "");
+    setText(newText);
   };
 
   const [text, setText] = useState(""); //index, setIndex use garera set text ma use state lerako fo internal change
@@ -77,6 +83,13 @@ export default TextForm = (props) => {
           <button className="btn btn-primary mx-2 my-1" onClick={handleSpaces}>
             Remove Spaces
           </button>
+
+          <button
+            className="btn btn-primary mx-2 my-1"
+            onClick={handleSpecialChar}
+          >
+            Remove special characters
+          </button>
         </div>
       </div>
       <div
@@ -96,3 +109,5 @@ export default TextForm = (props) => {
     </>
   );
 };
+
+export default TextForm;
